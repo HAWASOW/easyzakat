@@ -1,22 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "../../pages/auth/Login";
-import Register from "../../pages/auth/Register";
-
+import { Routes, Route } from "react-router-dom";
+import Login from "../../pages/Auth/Login";
+import Register from "../../pages/Auth/Register";
 
 function AuthRoutes() {
-    return (
-    <BrowserRouter>
-        <Routes>
+  return (
+    <Routes>
+      {/* Page de connexion */}
+      <Route path="/login" element={<Login />} />
 
-        {/* Page d'accueil */}
-        <Route path="/login" element={<Login />} />
-
-        {/* Page Calcul de Zakat */}
-        <Route path="/register" element={<Register />} />
-
-        </Routes>
-    </BrowserRouter>    
-    );
+      {/* Page de création de compte */}
+      <Route path="/register" element={<Register />} />
+    </Routes>
+  );
 }
 
 export default AuthRoutes;

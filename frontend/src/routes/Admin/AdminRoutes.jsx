@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import Dashboard from "../pages/Dashboard/DashboardPage";
+import AdminDashboard from "../../pages/Admin/AdminDashboard";
 
 function AdminRoutes() {
 
@@ -9,7 +9,7 @@ function AdminRoutes() {
 
       <Route
         path="/"
-        element={<DashboardPage />} />
+        element={<AdminDashboard />} />
       
 
     </Routes>
