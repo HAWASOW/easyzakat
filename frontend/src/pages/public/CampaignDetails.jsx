@@ -3,11 +3,11 @@ import { ArrowLeft, HandHeart } from "lucide-react";
 
 import campaigns from "../data/campaigns";
 
-function campaignDetails() {
+function CampaignDetails() {
 
   const { id } = useParams();
 
-  const campaign = projects.find(
+  const campaign = campaigns.find(
     (item) => item.id === Number(id)
   );
 
@@ -20,10 +20,10 @@ function campaignDetails() {
           </h1>
 
           <Link
-            to="/projets"
+            to="/campaigns"
             className="mt-4 inline-block text-[#005b49] underline"
           >
-            Retour aux projets
+            Retour aux campagnes
           </Link>
         </div>
       </div>
@@ -37,7 +37,7 @@ function campaignDetails() {
         <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-4">
 
           <Link
-            to="/projets"
+            to="/campaigns"
             className="rounded-full p-2 hover:bg-gray-100"
           >
             <ArrowLeft size={20} />

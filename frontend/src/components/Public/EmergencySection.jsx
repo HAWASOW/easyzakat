@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import projects from "./Projects";
+import campaigns from "./Campaigns";
 import EmergencyCard from "./EmergencyCard";
 
 function EmergencySection() {
@@ -25,10 +25,10 @@ function EmergencySection() {
 
       <div className="grid gap-3 md:grid-cols-2 lg:gap-5">
 
-        {projects.map((project) => (
+        {campaigns.map((campaign) => (
           <EmergencyCard
-            key={project.id}
-            project={project}
+            key={campaign.id}
+            campaign={campaign}
           />
         ))}
 

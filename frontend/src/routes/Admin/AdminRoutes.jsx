@@ -6,10 +6,10 @@ function AdminRoutes() {
 
   return (
     <Routes>
-
+{/* 
       <Route
         path="/"
-        element={<AdminDashboard />} />
+        element={<AdminDashboard />} /> */}
       
 
     </Routes>

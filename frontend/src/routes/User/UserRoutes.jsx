@@ -3,14 +3,18 @@ import Home from "../../pages/Public/Home";
 import CalculZakat from "../../pages/Public/CalculZakat";
 // import Donation from "../../pages/public/Donation";
 import AdminDashboard from "../../pages/Admin/AdminDashboard";
+import Landing from "../../pages/Public/Landing";
 
 
 function UserRoutes() {
   return (
       <Routes>
 
-        {/* Page d'accueil */}
-        <Route path="/" element={<Home />} />
+        {/* Landing Page */}
+        <Route path="/" element={<Landing />} />
+
+        {/* Page d'accueil simplifiee */}
+        <Route path="/home" element={<Home />} />
 
         {/* Page Calcul de Zakat */}
         <Route path="/calculer-zakat" element={<CalculZakat />} />
