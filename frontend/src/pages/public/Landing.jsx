@@ -1,12 +1,14 @@
 import Header from "../../layouts/PublicLayout/Header";
 import BottomNav from "../../layouts/PublicLayout/BottomNav";
-import Hero from "../../components/Public/Hero";
+import LandingHero from "../../components/Public/LandingHero";
 import ActionCards from "../../components/Public/ActionCards";
 import EmergencySection from "../../components/Public/EmergencySection";
-import ImpactReport from "../../components/Public/ImpactReport";
+import Statistics from "../../components/Public/Statistics";
+import HowItWorks from "../../components/Public/HowItWorks";
 
 
-function Home() {
+
+function Landing() {
   return (
     <div className="min-h-screen bg-[#f8f9fc]">
 
@@ -14,14 +16,11 @@ function Home() {
 
       <main className="mx-auto max-w-7xl px-4 pb-28 pt-6 sm:px-6 lg:px-10 lg:pb-12 lg:pt-12">
 
-        <Hero />
+        <LandingHero />
 
-        <ActionCards />
+        <Statistics />
 
-        <EmergencySection />
-        
-        <ImpactReport />
-
+        <HowItWorks />
 
       </main>
 
@@ -31,4 +30,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Landing;
