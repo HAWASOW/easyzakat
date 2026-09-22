@@ -1,6 +1,6 @@
 
 import { ArrowRight, Calculator } from "lucide-react";
-import heroImage from "../../assets/hero.png";
+import heroImage from "../../../assets/hero.png";
 
 export default function Hero() {
   return (

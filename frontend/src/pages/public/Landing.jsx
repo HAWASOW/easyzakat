@@ -1,10 +1,10 @@
 import Header from "../../layouts/PublicLayout/Header";
 import BottomNav from "../../layouts/PublicLayout/BottomNav";
-import LandingHero from "../../components/Public/LandingHero";
-import ActionCards from "../../components/Public/ActionCards";
-import EmergencySection from "../../components/Public/EmergencySection";
-import Statistics from "../../components/Public/Statistics";
-import HowItWorks from "../../components/Public/HowItWorks";
+import LandingHero from "../../components/Public/Landing/LandingHero";
+// import ActionCards from "../../components/Public/ActionCards";
+// import EmergencySection from "../../components/Public/EmergencySection";
+import Statistics from "../../components/Public/Landing/Statistics";
+import HowItWorks from "../../components/Public/Landing/HowItWorks";
 
 
 
