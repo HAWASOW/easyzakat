@@ -4,6 +4,7 @@ import CalculZakat from "../../pages/Public/CalculZakat";
 // import Donation from "../../pages/public/Donation";
 import AdminDashboard from "../../pages/Admin/AdminDashboard";
 import Landing from "../../pages/Public/Landing";
+import Cause from "../../pages/Public/Cause";
 
 
 function UserRoutes() {
@@ -24,6 +25,9 @@ function UserRoutes() {
 
         {/* Page Donation */}
         {/* <Route path="/don" element={<Donation /> } /> */}
+
+                {/* Page Choisir une cause */}
+        <Route path="/cause" element={<Cause />} />
 
 
       </Routes>
