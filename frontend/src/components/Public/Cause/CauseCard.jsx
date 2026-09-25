@@ -1,6 +1,4 @@
-import { FiUsers } from "react-icons/fi";
-
-const CauseCard = ({
+function CauseCard({
   image,
   category,
   organization,
@@ -9,7 +7,7 @@ const CauseCard = ({
   goal,
   percentage,
   donors,
-}) => {
+}) {
   return (
     <article
       className="

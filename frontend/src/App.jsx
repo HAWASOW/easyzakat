@@ -7,9 +7,9 @@ function App() {
   return (
     <BrowserRouter>
 
-    <UserRoutes/>
-    <AdminRoutes/>
-    <AuthRoutes/> 
+      <UserRoutes/>
+      <AdminRoutes/>
+      <AuthRoutes/> 
 
     </BrowserRouter>   
   );
