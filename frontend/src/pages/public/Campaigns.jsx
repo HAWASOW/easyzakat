@@ -1,7 +1,7 @@
 import Header from "../layout/Header";
 import BottomNav from "../layout/BottomNav";
 import EmergencyCard from "../components/EmergencyCard";
-import Campaigns from "../data/campaigns";
+import Campaigns from "../data/Campaigns";
 
 function Campaigns() {
   return (
