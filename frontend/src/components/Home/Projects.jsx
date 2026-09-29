@@ -1,0 +1,31 @@
+const projects = [
+  {
+    id: 1,
+    title: "Eau potable à Matam",
+    description:
+      "Construction de 3 puits solaires pour 500 familles.",
+    progress: 85,
+    remaining: "4 jours restants",
+    collected: 4250000,
+    target: 5000000,
+    image: "images/eau.png",
+    category: "Eau"
+  },
+
+  {
+    id: 2,
+    title: "Santé pour Touba",
+    description:
+      "Équipements médicaux pour le centre de santé local.",
+    progress: 42,
+    remaining: "12 jours restants",
+    collected: 2100000,
+    target: 5000000,
+    image: "images/sante.png",
+    category: "Santé"
+  },
+
+  
+];
+
+export default projects;
