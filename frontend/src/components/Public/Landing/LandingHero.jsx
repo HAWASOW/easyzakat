@@ -1,6 +1,7 @@
 
 import { ArrowRight, Calculator } from "lucide-react";
 import heroImage from "../../../assets/hero.png";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -29,21 +30,21 @@ export default function Hero() {
           </p>
 
           <div className="mt-5 flex flex-col gap-2 sm:flex-row">
-            <button
-              type="button"
+            <Link
+              to="/calculer-zakat"
               className="flex items-center justify-center gap-2 rounded-full bg-[#003f35] px-5 py-3 text-[10px] font-semibold text-white transition hover:bg-[#005443] sm:text-xs"
             >
               <Calculator size={14} />
               Calculer ma Zakat
-            </button>
+            </Link>
 
-            <button
-              type="button"
+            <Link
+              to="/type"
               className="flex items-center justify-center gap-2 rounded-full border border-[#003f35] px-5 py-3 text-[10px] font-semibold text-[#003f35] transition hover:bg-[#eaf5f1] sm:text-xs"
             >
               Faire un don
               <ArrowRight size={14} />
-            </button>
+            </Link>
           </div>
         </div>
 

@@ -17,13 +17,13 @@ function TypeList() {
         mt-10
         flex
         w-full
-        max-w-[650px]
         flex-col
         gap-6
 
         sm:px-6
 
-        lg:max-w-[700px]
+        sm:grid grid-cols-2
+
       "
     >
       {Types.map((Type) => (

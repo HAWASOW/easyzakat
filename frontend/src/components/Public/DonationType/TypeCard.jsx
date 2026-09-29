@@ -73,6 +73,7 @@ function DonationTypeCard({
 
         sm:p-7
 
+
         ${
           selected
             ? "border-[#005B4F] shadow-[0_0_0_2px_rgba(0,91,79,0.12)]"
@@ -80,68 +81,70 @@ function DonationTypeCard({
         }
       `}
     >
-      {/* Icône */}
-      <div
-        className={`
-          flex
-          h-[54px]
-          w-[54px]
-          shrink-0
-          items-center
-          justify-center
-          rounded-[8px]
-
-          ${getIconBackground(variant)}
-        `}
-      >
-        <Icon
-          size={25}
-          strokeWidth={2}
-          className={getIconColor(variant)}
-        />
-      </div>
-
-      {/* Contenu */}
-      <div className="min-w-0 flex-1">
-        <h2
-          className="
-            text-[23px]
-            font-semibold
-            leading-[1.15]
-            text-[#004D43]
-          "
-        >
-          {title}
-        </h2>
-
-        <span
+      <div className="flex w-full sm:flex-col items-center text-center">
+                {/* Icône */}
+        <div
           className={`
-            mt-3
-            inline-flex
-            rounded-full
-            px-3
-            py-1
-            text-[12px]
-            font-medium
+            flex
+            h-[54px]
+            w-[54px]
+            shrink-0
+            items-center
+            justify-center
+            rounded-[8px]
 
-            ${getBadgeBackground(variant)}
-            ${getBadgeColor(variant)}
+            ${getIconBackground(variant)}
           `}
         >
-          {badge}
-        </span>
+          <Icon
+            size={25}
+            strokeWidth={2}
+            className={getIconColor(variant)}
+          />
+        </div>
 
-        <p
-          className="
-            mt-2
-            max-w-[330px]
-            text-[16px]
-            leading-[1.5]
-            text-[#555B59]
-          "
-        >
-          {description}
-        </p>
+        {/* Contenu */}
+        <div className="min-w-0 flex-1">
+          <h2
+            className="
+              text-[23px]
+              font-semibold
+              leading-[1.15]
+              text-[#004D43]
+            "
+          >
+            {title}
+          </h2>
+
+          <span
+            className={`
+              mt-3
+              inline-flex
+              rounded-full
+              px-3
+              py-1
+              text-[12px]
+              font-medium
+
+              ${getBadgeBackground(variant)}
+              ${getBadgeColor(variant)}
+            `}
+          >
+            {badge}
+          </span>
+
+          <p
+            className="
+              mt-2
+              max-w-[330px]
+              text-[16px]
+              leading-[1.5]
+              text-[#555B59]
+            "
+          >
+            {description}
+          </p>
+        </div>
       </div>
     </button>
   );

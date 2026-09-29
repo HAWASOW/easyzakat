@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function CauseCard({
   image,
   category,
@@ -169,8 +171,8 @@ function CauseCard({
         </div>
 
         {/* CTA */}
-        <button
-          type="button"
+        <Link
+          to="/payment"
           className="
             mt-5
             flex
@@ -190,7 +192,7 @@ function CauseCard({
           "
         >
           Choisir cette cause
-        </button>
+        </Link>
       </div>
     </article>
   );
