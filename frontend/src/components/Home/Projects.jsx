@@ -1,3 +1,5 @@
+import eau from "../../assets/eau.png";
+import sante from "../../assets/sante.png";
 const projects = [
   {
     id: 1,
@@ -8,7 +10,7 @@ const projects = [
     remaining: "4 jours restants",
     collected: 4250000,
     target: 5000000,
-    image: "images/eau.png",
+    image: eau,
     category: "Eau"
   },
 
@@ -21,7 +23,7 @@ const projects = [
     remaining: "12 jours restants",
     collected: 2100000,
     target: 5000000,
-    image: "images/sante.png",
+    image: sante,
     category: "Santé"
   },
 
