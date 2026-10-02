@@ -30,7 +30,7 @@ function BottomNav() {
     {
       name: "Impact",
       icon: BarChart3,
-      path: "/projets"
+      path: "/impact"
     },
     {
       name: "Profil",

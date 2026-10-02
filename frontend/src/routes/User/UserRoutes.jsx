@@ -1,13 +1,9 @@
 import {Routes, Route } from "react-router-dom";
-import Home from "../../pages/Public/Home";
-import CalculZakat from "../../pages/Public/CalculZakat";
-import DonationType from "../../pages/public/DonationType";
-import AdminDashboard from "../../pages/Admin/AdminDashboard";
-import Landing from "../../pages/Public/Landing";
-import Cause from "../../pages/Public/Cause";
-
-
-
+import Home from "../../pages/public/Home";
+import CalculZakat from "../../pages/public/CalculZakat";
+// import Donation from "../../pages/public/Donation";
+import Landing from "../../pages/public/Landing"
+import Impact from "../../pages/public/Impact";
 function UserRoutes() {
   return (
       <Routes>
@@ -21,15 +17,11 @@ function UserRoutes() {
         {/* Page Calcul de Zakat */}
         <Route path="/calculer-zakat" element={<CalculZakat />} />
         
-        {/* Page Admin Dashboard
-        <Route path="/admin" element={<AdminDashboard />} /> */}
+        {/* Page Donation */}
+        {/* <Route path="/don" element={<Donation /> } /> */}
 
-                {/* Page Choisir une cause */}
-        <Route path="/cause" element={<Cause />} />
-
-                {/* Page Types de dons */}
-        <Route path="/type" element={<DonationType />} />
-
+        {/* Page Impact */}
+          <Route path="/impact" element={<Impact />} />
 
       </Routes>
   );

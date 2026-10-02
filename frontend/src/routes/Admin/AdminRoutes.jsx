@@ -1,17 +1,29 @@
 import { Routes, Route } from "react-router-dom";
 
-import AdminDashboard from "../../pages/Admin/AdminDashboard";
-
+import AdminDashboard from "../../pages/admin/AdminDashboard";
+import Beneficiaries from "../../pages/admin/Beneficiaries";
 function AdminRoutes() {
 
   return (
     <Routes>
+
+      {/* Page Admin Dashboard */}
+
+      <Route
+        path="/admin"
+        element={<AdminDashboard />} />
+      
+      {/* Page Beneficiaries */}
+      <Route
+        path="/beneficiaries"
+        element={<Beneficiaries />} />
 
       <Route
         path="/admin"
         element={<AdminDashboard />} />
       
     </Routes>
+
   );
 }
 
