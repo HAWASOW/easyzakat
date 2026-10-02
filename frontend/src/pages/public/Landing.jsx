@@ -5,6 +5,8 @@ import LandingHero from "../../components/Public/Landing/LandingHero";
 // import EmergencySection from "../../components/Public/EmergencySection";
 import Statistics from "../../components/Public/Landing/Statistics";
 import HowItWorks from "../../components/Public/Landing/HowItWorks";
+import CampaignList from "../../components/Public/Landing/CampaignList";
+
 
 
 
@@ -21,6 +23,8 @@ function Landing() {
         <Statistics />
 
         <HowItWorks />
+
+        <CampaignList />
 
       </main>
 

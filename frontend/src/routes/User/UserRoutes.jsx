@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import Home from "../../pages/Public/Home";
 import CalculZakat from "../../pages/Public/CalculZakat";
 import DonationType from "../../pages/public/DonationType";
@@ -13,7 +13,7 @@ function UserRoutes() {
       <Routes>
 
         {/* Landing Page */}
-        <Route path="/" element={<Landing />} />
+        <Route index element={<Landing />} />
 
         {/* Page d'accueil simplifiee */}
         <Route path="/home" element={<Home />} />
@@ -21,11 +21,8 @@ function UserRoutes() {
         {/* Page Calcul de Zakat */}
         <Route path="/calculer-zakat" element={<CalculZakat />} />
         
-        Page Admin Dashboard
-        <Route path="/admin" element={<AdminDashboard />} />
-
-        {/* Page Donation */}
-        {/* <Route path="/don" element={<Donation /> } /> */}
+        {/* Page Admin Dashboard
+        <Route path="/admin" element={<AdminDashboard />} /> */}
 
                 {/* Page Choisir une cause */}
         <Route path="/cause" element={<Cause />} />

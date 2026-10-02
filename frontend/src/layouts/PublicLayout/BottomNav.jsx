@@ -25,7 +25,7 @@ function BottomNav() {
     {
       name: "Give",
       icon: Gift,
-      path: "/don"
+      path: "/type"
     },
     {
       name: "Impact",

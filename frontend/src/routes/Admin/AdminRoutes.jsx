@@ -6,12 +6,11 @@ function AdminRoutes() {
 
   return (
     <Routes>
-{/* 
-      <Route
-        path="/"
-        element={<AdminDashboard />} /> */}
-      
 
+      <Route
+        path="/admin"
+        element={<AdminDashboard />} />
+      
     </Routes>
   );
 }

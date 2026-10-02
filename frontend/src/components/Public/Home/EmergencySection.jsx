@@ -14,7 +14,7 @@ function EmergencySection() {
         </h2>
 
         <Link
-          to="/projets"
+          to="/cause"
           className="flex items-center gap-1 text-xs font-medium text-[#806a00] underline sm:text-sm"
         >
           Tout voir
